@@ -1,0 +1,47 @@
+Transmitter Side:
+----------------
+1. PRBS Generator (Pseudo-Random Binary Sequence Generator):
+Generates a random sequence of binary bits to simulate the input data signal for testing purposes.
+
+2. NRZ Pulse Generator (Non-Return-to-Zero Pulse Generator):
+
+Converts the binary data from the PRBS generator into an optical-friendly pulse format.
+NRZ encoding ensures a continuous signal without frequent resets.
+
+3.CW Laser (Continuous Wave Laser):
+
+Produces a continuous optical signal (laser light) as the carrier wave for data transmission.
+
+4. Mach-Zehnder Modulator (MZM):
+
+Modulates the CW laser signal with the data pulses (from the NRZ generator).
+The MZM alters the amplitude or phase of the laser beam based on the input data signal.
+
+5.Optical Amplifier:
+
+Amplifies the modulated optical signal to ensure it reaches the desired power level for transmission.
+Optical amplifiers help extend the communication range of the system.
+----------------------------------------------------------------------------------------------------
+FSO Channel:
+------------
+- This represents the free-space medium (e.g., air or vacuum) where the optical signal propagates.
+- External factors such as weather (fog, rain, dust) can attenuate the signal, impacting performance.
+----------------------------------------------------------------------------------------------------
+Receiver Side:
+--------------
+1. Optical Amplifier:
+
+Amplifies the weak received optical signal to improve detection quality.
+Photodetector:
+
+Converts the received optical signal back into an electrical signal.
+The photodetector detects the intensity of the light and regenerates the transmitted data.
+
+2. Low Pass Filter:
+
+Removes high-frequency noise and unwanted signal components, ensuring a clean electrical signal.
+
+3.BER Analyzer (Bit Error Rate Analyzer):
+
+Measures the performance of the communication system by calculating the number of errors in the received data.
+A low BER indicates a reliable system.
